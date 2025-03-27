@@ -23,8 +23,59 @@ p {
 
 /* ----------------------------------------------- ナビゲーションバー */
 
+.navbar_brand_logo {
+  /* サイズを32pxの正方形へ変更 */
+  width: 32px;
+  height: 32px;
+
+  /* imgはインライン要素なのでインラインブロックに設定 */
+  display: inline-block;
+
+  /* "SAMURAI KITCHEN" 文字との空白を15pxに設定 */
+  margin-right: 15px;
+}
+
+/* カンマで区切ると複数のクラスに適用可能 一番左と右のナビゲーションに対するフォント*/
+.my_navbar_brand,
+.my_nav_link {
+
+  /* フォントサイズを16pxに設定 */
+  font-size: 16px;
+
+  /* フォントをserif体に設定 */
+  font-family: 'Lora', serif;
+
+  /* フォント色を黒色に設定 */
+  color: #000000 !important;
+
+}
 
 
+/* Bootstrapのボタンに初期設定されている周囲のborder（枠線）を消す */
+.navbar-toggler {
+  padding: 0 !important;
+  border: none;
+}
+
+/* ハンバーガーボタンがチェック状態である（押されている）とき、閉じるボタン（×）を表示する */
+#hamburger_btn_check:checked~.hamburger_btn .btn_close {
+  display: block;
+}
+
+/* ハンバーガーボタンがチェック状態である（押されている）とき、ハンバーガーボタンを表示しない */
+#hamburger_btn_check:checked~.hamburger_btn .btn_open {
+  display: none;
+}
+
+/* 最初に表示した時は、閉じるボタン（×）は表示しない */
+.btn_close {
+  display: none;
+}
+
+/* ハンバーガーボタンが押されているかを判断するためのチェックボックスは隠す */
+#hamburger_btn_check {
+  display: none;
+}
 
 
 /* ----------------------------------------------- カールセル */
