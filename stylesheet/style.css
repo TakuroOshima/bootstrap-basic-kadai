@@ -179,7 +179,7 @@ p {
 
 .menu::after {
   content: "メニュー";
-  margin: 0 auto 0;zz
+  margin: 0 auto 0;
 }
 
 .menu_title {
