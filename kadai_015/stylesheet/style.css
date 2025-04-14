@@ -179,6 +179,17 @@ p {
   margin: 0 auto 0;
 }
 
+/* ----------------------------------------------- シェフ */
+
+.chef::after {
+  content: "シェフ"
+}
+
+.chef_bg {
+  background-color: #fdf5e6;
+}
+
+
 /* ----------------------------------------------- フッター */
 #footer {
   background-color: #FAFAFA;
@@ -233,6 +244,7 @@ p {
 
 /* スマートフォン画面幅（最大991pxまで）でスタイルを適用 */
 @media screen and (max-width: 991px) {
+
   .footer_text,
   .copy_right {
     margin-top: 2rem;
@@ -240,7 +252,8 @@ p {
     position: relative;
   }
 
-  .copy_right>p, img {
+  .copy_right>p,
+  img {
     margin-right: 1rem;
     font-size: 14px;
     margin: 0;
@@ -249,6 +262,7 @@ p {
 }
 
 @media screen and (max-width: 375px) {
+
   .footer_text,
   .copy_right {
     margin-top: 2rem;
